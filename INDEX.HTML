@@ -1,62 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <header>
-    <h1>Abhishek Tiwari</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <!-- Main Content -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a student in Dr. Hari Singh Guor University Sagar(M.P.).Where teacher faculty is very chutiya exclude gourav sir and about me rahne do kya karoge jaan kar main ek ladka hu jo jinda hai or majboor hai ye code likhne ke liye kyoki certiicate chahiye.</p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Calcuator</h3>
-      <p>A desctription where we can perform arthmetic operations .</p>
+    <div class="gallery-container">
+        <div class="gallery">
+            <img id="current-image" src="IMAGES/IMAGE1.avif" alt="Gallery Image">
+        </div>
+        <div class="navigation">
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+        </div>
+        <div class="thumbnail-container">
+            <img class="thumbnail" src="IMAGES/IMAGE1.avif" alt="Thumbnail 1">
+            <img class="thumbnail" src="IMAGES/IMAGE2.jpeg" alt="Thumbnail 2">
+            <img class="thumbnail" src="IMAGES/IMAGE3.avif" alt="Thumbnail 3">
+            <img class="thumbnail" src="IMAGES/IMAGE4.jpeg" alt="Thumbnail 4">
+            <img class="thumbnail" src="IMAGES/IMAGE5.jpeg" alt="Thumbnail 5">
+        </div>
     </div>
-    <div class="project">
-      <h3>Image gallery </h3>
-      <p>A site where uploaded multyple images to see .</p>
-    </div>
-  </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>A frontend Developer</li>
-      <li>I know Azure and AWS well</li>
-      <li>I can make smile on saddy face </li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>How to reach out to you.</p>.
-    <p>9302296436</p>
-    
-    <button id="contactButton">Get in Touch</button>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 Your Name. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
