@@ -3,27 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
+    <title>Stylish Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="gallery-container">
-        <div class="gallery">
-            <img id="current-image" src="IMAGES/IMAGE1.avif" alt="Gallery Image">
-        </div>
-        <div class="navigation">
-            <button id="prevBtn">Previous</button>
-            <button id="nextBtn">Next</button>
-        </div>
-        <div class="thumbnail-container">
-            <img class="thumbnail" src="IMAGES/IMAGE1.avif" alt="Thumbnail 1">
-            <img class="thumbnail" src="IMAGES/IMAGE2.jpeg" alt="Thumbnail 2">
-            <img class="thumbnail" src="IMAGES/IMAGE3.avif" alt="Thumbnail 3">
-            <img class="thumbnail" src="IMAGES/IMAGE4.jpeg" alt="Thumbnail 4">
-            <img class="thumbnail" src="IMAGES/IMAGE5.jpeg" alt="Thumbnail 5">
+    <div class="calculator">
+        <input type="text" id="display" class="display" disabled />
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="deleteLast()">DEL</button>
+            <button onclick="appendOperator('%')">%</button>
+            <button onclick="appendOperator('/')">/</button>
+
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button onclick="appendOperator('*')">*</button>
+
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button onclick="appendOperator('-')">-</button>
+
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button onclick="appendOperator('+')">+</button>
+
+            <button onclick="appendNumber('0')">0</button>
+            <button onclick="appendNumber('.')">.</button>
+            <button onclick="calculateResult()">=</button>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
